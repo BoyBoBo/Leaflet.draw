@@ -1,4 +1,17 @@
 var deps = {
+	Extensions: {
+		src: [
+			'ext/TouchEvents.js',
+			'ext/LatLngUtil.js',
+			'ext/GeometryUtil.js',
+			'ext/LineUtil.Intersect.js',
+			'ext/Polyline.Intersect.js',
+			'ext/Polygon.Intersect.js',
+			'ext/Semicircle.js'
+		],
+		desc: 'Extensions of leaflet classes.'
+	},
+	
 	Core: {
 		src: [
 			'Leaflet.draw.js',
@@ -35,19 +48,6 @@ var deps = {
 		],
 		desc: 'Editing handlers for: polylines, polygons, rectangles, circlemarkers and circles.',
 		deps: ['Core']
-	},
-
-	Extensions: {
-		src: [
-			'ext/TouchEvents.js',
-			'ext/LatLngUtil.js',
-			'ext/GeometryUtil.js',
-			'ext/LineUtil.Intersect.js',
-			'ext/Polyline.Intersect.js',
-			'ext/Polygon.Intersect.js',
-			'ext/Semicircle.js'
-		],
-		desc: 'Extensions of leaflet classes.'
 	},
 
 	CommonUI: {
